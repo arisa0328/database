@@ -1,0 +1,26 @@
+html
+    head
+        link(ref="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet" href="css/materialize.min.css" media="screen,projection")
+        link(rel="stylesheet" href="css/app.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    <html>
+
+    body   <pre>
+    p        ＊Group Kana belong to＊  </pre>
+
+    </html>
+
+
+    body
+        script(type=" text/javascript" src="js/materialize.min.js")
+        div(class="container")
+            each row in results
+                div(class="row")
+                 div(class="col 12")
+                    img(class="icon" src="icons/"+row['username']+".png")
+                 div(class="col s11")
+                    div(class="teaminfo") @#{row['datatime']} #{row['count(user_id)}
+		    div #{row['contents']}
+                    div(class="row")
+                
